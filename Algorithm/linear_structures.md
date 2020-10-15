@@ -24,5 +24,14 @@ Push는 Queue에 넣는거고 Pop은 Stack에서 제일 먼저 들어온 녀석�
 reference : https://www.programiz.com/dsa/queue
 
 
+## Deque
+- 관련 백준문제 (10866 ...)
 
+Queue와 Stack을 합친것.
+
+앞이랑 뒤에가 모두 열려있어서 Queue, Stack을 골라서(?) 사용가능하다.
+
+![image](https://user-images.githubusercontent.com/36908476/96169213-c7e4ca80-0f5c-11eb-9c98-68594824f8f6.png)
+
+reference : https://www.programiz.com/dsa/deque
 
