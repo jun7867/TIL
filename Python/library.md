@@ -1,14 +1,26 @@
 # Python library
 
 ## 1. itertools
-백준 14889번을 풀다가 combination을 사용할때 사용하면 편하다는 것을 알았다.
+백준 14889번을 풀다가 순열,조합을 사용할때 itertools을 사용하면 편하다는 것을 알았다.
 
+### combinations 조합
 ```
 from itertools import combinations
 members = combinations(list, 2)
 ```
-list를 2개씩 조합한 것들을 members에 저장!
-combinations뿐 아니라 permutations, product도 있음.
+list를 2개씩 조합한 것들을 members에 저장하면 {0,1} , {2,3} 와 같은 조합들이 나옴
+
+### permutations 순열
+```
+from itertools import permutations
+members = permutations(Nlist, N)
+
+for member in members:
+  memberList=list(member)
+```
+permutations은 순열로 Nlist가 4이고 N이 4이면 {0,1,2,3} , {0,2,3,1} ... 와 같은 순열들이 members에 저장됨.
+list로 사용하려면 members를 하나씩 꺼내주면서 list로 만들어주면 된다.
+
 
 
 ## 2. sys
