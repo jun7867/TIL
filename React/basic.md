@@ -1,24 +1,36 @@
-# Basic 
+# React Basic 개념 
 
-## Why React??
+## What React??
 
 
-**-user interfaces를 만들기 위한 library**
+**UI(user interfaces)를 만들기 위한 library로 Component들이 모여서 만들어 졌다.** 
 
 (사용자에게 보여지는 **UI**, **event** 반응 처리)
 
--MVC(model, view, controller) react는 여기서 **view**를 담당한다.
+-MVC(model, view, controller)에서 react는 **view**를 담당한다.
 
--싱글페이지 application. 화면 깜박임 없이 자연스럽게 넘어간다.
+-Single page application으로 화면 깜박임 없이 자연스럽게 넘어간다.
 
--state 변경시 render가 호출되고 Virtual DOM Tree로 변경이 필요한 부분만 업데이트된다.
+-State 변경시(데이터가 변경될 때마다) render 함수가 호출되고, 모든 요소가 업데이트 되는것이 아니라 Virtual DOM Tree가 변경이 필요한 부분만 업데이트 시켜준다.
 
-=> Component를 사용해서 독립적이고, 유지보수와 재사용에 좋다.
 <br>
 <br>
 
+## Component란?
 
-## Frameworks vs Libraries
+-Component는 하나의 기능을 수행하는 UI 단위이다. (button, Navbar...) 즉, 사용자에게 보여지는 위젯 단위
+
+-Root라는 Component 안에 다양한 Component들이 존재하며 그것들은 각각 독립적이고 이들을 조립해서 만든다.
+
+-Component를 사용하면 독립적이고, 유지보수와 재사용에 좋다.
+
+-재사용이 가능할만큼 나눠야 하며 너무 작은 단위로 나누게 되면 오히려 재사용이 힘들다.
+
+<br>
+<br>
+<br>
+
+## Frameworks vs Libraries 
 
 **Frameworks**: 이미 완성된 완성품. 
 
@@ -28,7 +40,7 @@ ex) **Angular**(Routing,UI,HTTP Clients, State 관리)
 
 장: 배우는게 오래걸린다. 
 
-단: 업데이트 되면 다 새로배워야함.
+단: 업데이트 되면 다 새로 배워야함. (앵귤러 1 -> 앵귤러 2 로 업데이트 되었을 때 완전히 새로운 언어라 새로 배워야 했다)
 
 <br>
 <br>
@@ -45,14 +57,15 @@ ex) **React**
 
 단: 버전이 업데이트 되어도 안정성이 좋다.
 
-
+<br>
+<br>
 **Gatsby**
 
 react는 UI, Event 처리를 주로 담당해서 라우팅 같은것들을 따로 해줘야 하지만 Gatsby는 라우팅, preloading , lazy loading 등 다양한 기능이 추가된 프레임워크이다.
 <br>
 <br>
 
-## JSX
+## JSX란 무엇인가?
 
 JSX=javascript+XML
 
@@ -64,6 +77,7 @@ html에서의 class를 className , onclick을 onClick으로 사용해야함.
 
 return은 여러개가 안되기 때문에 <React.Fragment> 혹은 빈 <> 로 묶어서 사용한다.
 
+<br>
 <br>
 
 ## react-dom
