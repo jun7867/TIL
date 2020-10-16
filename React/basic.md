@@ -27,8 +27,6 @@
 -재사용이 가능할만큼 나눠야 하며 너무 작은 단위로 나누게 되면 오히려 재사용이 힘들다.
 
 <br>
-<br>
-<br>
 
 ## Frameworks vs Libraries 
 
@@ -65,6 +63,45 @@ react는 UI, Event 처리를 주로 담당해서 라우팅 같은것들을 따�
 <br>
 <br>
 
+## Class vs Function
+
+### Class
+
+-state, data가 담기는 State object가 들어가 있다.
+
+-Lifecycle method(component 상태에 따라서 Dom Tree 자동 업데이트)
+
+-상태가 있고 주기적으로 변경될 때
+
+### Function
+
+-state가 없고 정적일 때
+
+-Lifecycle method가 없다.
+
+-한가지의 기능을 수행하는 단위
+
+### Hook
+
+-Hook은 최신 버전으로 function에서도 state와 lifecycle method를 사용할 수 있게 해준다.
+
+-Class는 this.~~ 식으로 해야하기에 Hook을 사용하면 this binding issue 귀찮음을 줄여주고 코드의 중복을 제거해준다. (마운트, 언마운트..)
+
+-대신, 최신 버전이기에 class로 짜여진 것들이 많기에 class도 할 줄 알아야 한다.
+
+
+## react-dom
+
+babel을 이용해서 브라우저가 이해할 수 있도록 순수 자바스크립트로 변환, 이렇게 변환된 component를 html과 연결시켜주는 역할을 react-dom이 한다.
+
+index.html에 있는 root와 component(App)를 연동한다. root id값을 가진 div에 App component가 연결된다.
+
+![image](https://user-images.githubusercontent.com/36908476/96299726-6c374180-102f-11eb-9ca0-b75cf80c9792.png)
+
+[보충내용](https://ko.reactjs.org/docs/react-dom.html)
+
+<br>
+
 ## JSX란 무엇인가?
 
 JSX=javascript+XML
@@ -77,14 +114,15 @@ html에서의 class를 className , onclick을 onClick으로 사용해야함.
 
 return은 여러개가 안되기 때문에 <React.Fragment> 혹은 빈 <> 로 묶어서 사용한다.
 
-<br>
-<br>
+![image](https://user-images.githubusercontent.com/36908476/96302052-0baa0380-1033-11eb-9cea-8a68140a623f.png)
 
-## react-dom
+![image](https://user-images.githubusercontent.com/36908476/96302192-50ce3580-1033-11eb-8fcd-50a2ad1be084.png)
 
-babel을 이용해서 순수 자바스크립트로 변환, 변환된 component를 html과 연결시켜주는 역할을 한다.
+![image](https://user-images.githubusercontent.com/36908476/96303006-aa832f80-1034-11eb-80bc-f9797172a039.png)
 
-index.html에 있는 root와 component(App)를 연동한다
+[Introducing JSX](https://ko.reactjs.org/docs/introducing-jsx.html)
+
+[JSX In Depth](https://ko.reactjs.org/docs/jsx-in-depth.html)
 
 <br>
 
@@ -131,3 +169,10 @@ update가 필요하면 true를 return하면 업데이트 하게 해줌.
 PureComponent는'shouldComponentUpdate'을 구현해서 props과 state의 변경사항이 발생하면 shallow comparisons을 해서 오브젝트 자체가 변경되지 않았다면 render를 안하게 한다.
 
 계속 업데이트가 되는 컴포넌트는 그냥 Component를 사용하면 된다.(비교하는데 시간이 더 쓰임)
+
+
+## Tips
+
+-파일명은 소문자로 (따로 규칙은 없지만 배포시 혼동을 피하기 위해)
+
+-Component 이름은 반드시 **대문자**!!
