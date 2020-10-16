@@ -31,15 +31,16 @@ manifest.json : 모바일(웹 어플리케이션)을 할때 필요함.
 
 ---
 
-### eject를 하고 분리되는 것들.. (react 안에 숨겨져 있는 툴)
+## Eject를 하고 분리되는 것들.. (React 안에 숨겨져 있는 툴)
 
-1. **BABEL**
+### **BABEL**
+
 -javaScript transcompiler (ECMA 2015 → older version)으로 바꿔줌. + (TS,JSX → JS)
 
 (최신 문법들을 기존 브라우저에서 이해를 못하기 때문에 오래된 버전으로 바꿔주는것.)
 
 
-2. **Webpack**
+### **Webpack**
 
 -Bundling the code, JavaScript module bundler 
 
@@ -48,17 +49,17 @@ manifest.json : 모바일(웹 어플리케이션)을 할때 필요함.
 -변수,함수들의 이름을 바꿔줌(외부에서 접근 못하게)
 
 
-3. ESLint
+### ESLint
 
 -checking code (코드의 문제가 있으면 미리 알려줌)!!! 엄청 유용함
 
 
-4. Jest
+### Jest
 
 -unit test framework.
 
 
-5. PostCSS
+### PostCSS
 
 -제공하는 CSS를 브라우저가 이해할 수 있는 CSS를 바꿔줌.
 
