@@ -129,6 +129,10 @@ return은 여러개가 안되기 때문에 <React.Fragment> 혹은 빈 <> 로 �
 ## Lifecycle
 ![image](https://user-images.githubusercontent.com/36908476/96350751-255e5000-10f2-11eb-94e6-b5787d2386b1.png)
 
+컴포넌트와 연관 없는 이벤트를 처리 해야 할 경우에 많이 사용된다. (윈도우 스크롤링 이벤트)
+
+이벤트를 생성을 했으면 꼭 삭제해 줘야함. (리소스 낭비를 줄이기 위해)
+
 componentDidMount() - component가 추가되었을 때 (UI상에서 생길 때)
 
 componentWillUnmount() - component가 삭제하기 전에 호출됨.(UI상에서 없어질 때)
