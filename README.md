@@ -1,5 +1,5 @@
 # TIL
-Today I Learned
+Today I Learned (시작일 2020. 10. 16)
 
 좋은 개발자가 되기 위해 개발 지식 및 경험을 기록으로 남긴다.
 
