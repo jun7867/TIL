@@ -126,6 +126,15 @@ return은 여러개가 안되기 때문에 <React.Fragment> 혹은 빈 <> 로 �
 
 <br>
 
+## Lifecycle
+![image](https://user-images.githubusercontent.com/36908476/96350751-255e5000-10f2-11eb-94e6-b5787d2386b1.png)
+
+componentDidMount() - component가 추가되었을 때 (UI상에서 생길 때)
+
+componentWillUnmount() - component가 삭제하기 전에 호출됨.(UI상에서 없어질 때)
+
+[https://reactjs.org/docs/state-and-lifecycle.html](https://reactjs.org/docs/state-and-lifecycle.html)
+
 
 ## Tips
 
