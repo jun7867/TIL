@@ -126,28 +126,6 @@ return은 여러개가 안되기 때문에 <React.Fragment> 혹은 빈 <> 로 �
 
 <br>
 
-## State 와 Props
-**state**
-
-컴포넌트 안에서 내가 정의한 컴포넌트의 state 오브젝트
-
-컴포넌트 UI를 위한 데이터를 보관하는 오브젝트, 이 **state라는 오브젝트를 통해서 데이터에 업데이트가 발생하면 리엑트가 자동적으로 render 함수 호출.**
-
-<br>
-
-**props**
-
-props는 컴포넌트 밖에서(외부)에서 받아오는 데이터
-
-컴포넌트의 재사용을 높이기 위해서 사용한다. (외부로 부터 데이터를 입력 받아서 같은 컴포넌트로 데이터에 맞게  UI 보여주기 위해.)
-
-그래서 component 자체에서 state를 변경하는 것이 아니라 상위 컴포넌트로 부터 props를 받아서 처리한다.
-
-title,onClick 같은 것들을 인자로 전달해 주면 이걸 props 오브젝트로 묶어서 컴포넌트로 전달
-
-
-<br>
-
 ## Pure Component
 
 Class에서 사용됨
@@ -176,3 +154,19 @@ PureComponent는'shouldComponentUpdate'을 구현해서 props과 state의 변경
 -파일명은 소문자로 (따로 규칙은 없지만 배포시 혼동을 피하기 위해)
 
 -Component 이름은 반드시 **대문자**!!
+
+-rcc 를 하면 기본적인 Class 구조가 자동 완성된다.
+
+-rsi는 function 구조가 자동 완성된다. (Hook 사용시)
+
+-Font Awesome을 사용하려면 yarn으로 설치해야함
+
+```
+yarn add @fortawesome/fontawesome-free
+```
+
+그리고 index.js에 아래 구문 추가
+
+```
+import '@fortawesome/fontawesome-free/js/all.js';
+```
