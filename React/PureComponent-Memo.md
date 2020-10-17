@@ -40,4 +40,11 @@ PureComponent는'shouldComponentUpdate'을 구현해서 props과 state의 변경
 계속 업데이트가 되는 컴포넌트는 그냥 Component를 사용하면 된다.(비교하는데 시간이 더 쓰임)
 
 
+## Memo (Hook)
+```
+import React, {memo} from 'react';
 
+const Input = memo(props => {
+.
+.
+```
