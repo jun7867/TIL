@@ -120,33 +120,11 @@ return은 여러개가 안되기 때문에 <React.Fragment> 혹은 빈 <> 로 �
 
 ![image](https://user-images.githubusercontent.com/36908476/96303006-aa832f80-1034-11eb-80bc-f9797172a039.png)
 
-[Introducing JSX](https://ko.reactjs.org/docs/introducing-jsx.html)
+[JSX 기초](https://ko.reactjs.org/docs/introducing-jsx.html)
 
-[JSX In Depth](https://ko.reactjs.org/docs/jsx-in-depth.html)
+[JSX 심화](https://ko.reactjs.org/docs/jsx-in-depth.html)
 
 <br>
-
-## Pure Component
-
-Class에서 사용됨
-
-하나를 바꾸면 다 호출이 되지만 업데이트가 되지 않고 dom이 바뀌지 않으면 그냥 넘어가서 성능에 영향이 없다.
-
-=> 하지만, 컴포넌트가 업데이트 됐을때 수행되는 함수가 따로 있다면 이는 성능에 영향을 미친다.
-
-=> 이를 방지하기 위해 Pure component, 메모
-
-=> 변화가 없으면 render 안하기!!
-
-이전 props,state를 지금과 비교해서(shallow하게=reference만 비교해서, 안에 동일한 object라면 데이터가 바껴도 false라고 한다. ) 
-
-update가 필요하면 true를 return하면 업데이트 하게 해줌.
-
-### PureComponent VS Component
-
-PureComponent는'shouldComponentUpdate'을 구현해서 props과 state의 변경사항이 발생하면 shallow comparisons을 해서 오브젝트 자체가 변경되지 않았다면 render를 안하게 한다.
-
-계속 업데이트가 되는 컴포넌트는 그냥 Component를 사용하면 된다.(비교하는데 시간이 더 쓰임)
 
 
 ## Tips
