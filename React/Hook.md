@@ -13,6 +13,9 @@ Hook은 Function이기 때문에 class에서는 render부분만 호출되는 반
 ```
 const handleIncrement = useCallback( () => { setCount(count +1); });
 ```
+하지만, useCallback을 많이 만들면 메모리상에 무리가 가기 때문에 조심해서 사용해야 한다.
+
+자식 컴포넌트에 props를 전달해서 re-render가 일어나는 경우에 사용한다.
 
 ## useRef
 Ref를 사용할 때 createRef를 사용하면 전체가 계속 호출되어 계속 만들어지기 때문에 useRef를 사용한다.
