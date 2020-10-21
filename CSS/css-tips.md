@@ -26,3 +26,6 @@ padding,border가 width와 height에 포함이 되도록 하는 것.
 ```
 box-sizing: border-box;
 ```
+
+## 5. box-shadow CSS
+https://www.cssmatic.com/box-shadow 사이트에 들어가서 쉽게 만들 수 있다.
