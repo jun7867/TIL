@@ -2,3 +2,4 @@
 
 - 백준 18111 https://www.acmicpc.net/problem/18111  (Brute force) 
 - 백준 2504 https://www.acmicpc.net/problem/2504 (Stack)
+- 백준 14891 톱니바퀴 https://www.acmicpc.net/problem/14891 (구현)
