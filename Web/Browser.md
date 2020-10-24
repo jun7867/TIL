@@ -11,7 +11,13 @@ Window의 자식으로 Dom(document 관련), BOM(navigator, location, frames, sc
 ![image](https://user-images.githubusercontent.com/36908476/97084860-b4201f00-1654-11eb-9603-ba9a0d100095.png)
 
 즉 DOM은 document(body,img..) , BOM은 browser 관련된 것들이 있다.
+
+## DOM
 ![image](https://user-images.githubusercontent.com/36908476/97084906-f77a8d80-1654-11eb-8985-339d619e94cd.png)
+웹 문서를 브라우저에 렌더링 하려면 브라우저가 이해할 수 있는 구조로 메모리에 올려야 하는데 이것이 DOM 구조이다. 
+
+모든 요소와 요소의 속성, 텍스트를 각각의 객체로 만들어 트리구조로 구성한것이다.
+
 
 ### Window 사용
 API를 호출함으로써 브라우저에 있는 다양한 기능들을 쓸 수 있다. 
