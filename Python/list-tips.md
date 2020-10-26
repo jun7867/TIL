@@ -21,3 +21,9 @@ import deepcopy를 해도 되지만 list[:]를 하면 deep copy를 할 수 있�
 a=[1,2]
 b=a[:]
 ```
+## 4. 한줄에 여러개 입력받아 list에 저장하기
+```
+testList = list(map(int, input().split()))
+print(testList)
+# 입력: 1 2 3 , 출력: [1,2,3]
+```
