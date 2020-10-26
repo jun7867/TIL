@@ -14,3 +14,10 @@ test=['a','b','q']
 print("".join(test))
 #출력 예: abq
 ```
+
+## 3. list deepCopy하기!
+import deepcopy를 해도 되지만 list[:]를 하면 deep copy를 할 수 있다.
+```
+a=[1,2]
+b=a[:]
+```
