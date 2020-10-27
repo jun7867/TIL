@@ -27,3 +27,10 @@ testList = list(map(int, input().split()))
 print(testList)
 # 입력: 1 2 3 , 출력: [1,2,3]
 ```
+
+## 5. 리스트안에 리스트 값들을 sort하기
+```
+array=[[1,3],[5,1],[3,4]]
+array.sort(key=lambda x: x[1]) # 2번째 값으로 sort , 1번째 값으로 하려면 x[0]
+#[[5,1],[1,3],[3,4]]
+```
