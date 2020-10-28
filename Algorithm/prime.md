@@ -29,6 +29,6 @@ for i in range(2, M + 1):
         if i >= N:
             print(i)
     # 배수 다 지우기
-    for j in range(2 * i, M + 1, i):
+    for j in range(i * i, M + 1, i):
         array[j] = False
 ```
