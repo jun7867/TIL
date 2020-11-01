@@ -32,3 +32,6 @@ for i in range(2, M + 1):
     for j in range(i * i, M + 1, i):
         array[j] = False
 ```
+
+### 시간 복잡도
+O(nloglogn)
