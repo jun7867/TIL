@@ -9,7 +9,7 @@
 
 이런식으로 2,3,5,7 등의 배수를 검사에서 제외하면서 검사할 항목이 급격하게 줄어들게 된다.
 
-example 백준 1929
+example 백준 1929(https://www.acmicpc.net/problem/1929)
 ```
 # 1929 소수 구하기
 # math
