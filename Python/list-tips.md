@@ -34,3 +34,9 @@ array=[[1,3],[5,1],[3,4]]
 array.sort(key=lambda x: x[1]) # 2번째 값으로 sort , 1번째 값으로 하려면 x[0]
 #[[5,1],[1,3],[3,4]]
 ```
+
+## 6. 리스트안에 int를 string으로 변환
+int로 바꾸는건 반대로
+```
+temp = list(map(str, numbers))
+```
