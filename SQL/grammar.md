@@ -13,6 +13,11 @@ FROM animal_ins
 WHERE INTAKE_CONDITION != 'Aged'
 Order BY animal_id
 ```
+
+* NULL이 아닌값
+```
+WHERE [column] IS NOT NULL
+```
 ## 2. Order by 
 order by [column] 을 하면 컬럼명을 기준으로 오름차순 정렬한다는 뜻.
 
@@ -26,7 +31,7 @@ SELECT * FROM _TABLE order by 1
 ```
 -프로그래머스 여러 기준으로 정렬-
 SELECT animal_id, name, datetime
-from animal_ins
+FROM animal_ins
 order by name, datetime desc;
 ```
 => name을 먼저 정렬하고 그 뒤에 time으로 정렬
@@ -39,3 +44,38 @@ SELECT NAME FROM ANIMAL_INS
 ORDER BY DATETIME
 LIMIT 1
 ```
+==> LIMIT 1은 젤 위에 1개만 뽑는다는 뜻
+
+## 4. max min 뽑아내기
+```
+SELECT max(datetime)
+FROM animal_ins;
+```
+datetime에서 max값을 뽑아낸다는 뜻이다. min도 똑같은 방식.
+
+## 5. 총 count 뽑아내기
+```
+SELECT COUNT(animal_id) FROM animal_ins
+```
+
+## 6. 중복 제거하기 Distinct
+```
+SELECT count(distinct name)
+FROM animal_ins
+```
+name들 중에서 중복이 없는 count값.
+
+## 7. Group by , Having
+유형별로 갯수를 가져오고 싶을때 그룹화 해서 count할 수 있는 방법.
+
+특정 컬럼 그룹화 GROUP BY
+
+특정 컬럼 그룹화에 조건 걸기 HAVING
+
+그룹화 하기전 조건 걸기 WHERE
+
+참고내용
+그룹화 하기전 조건 걸기 WHERE
+https://extbrain.tistory.com/56
+
+
