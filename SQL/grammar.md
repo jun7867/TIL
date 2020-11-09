@@ -1,4 +1,3 @@
-# 대부분의 문제는 Oracle을 기준합니다.
 
 ## 0. SELECT
 SELECT는 조회하는 구문이다.
@@ -73,9 +72,34 @@ name들 중에서 중복이 없는 count값.
 특정 컬럼 그룹화에 조건 걸기 HAVING
 
 그룹화 하기전 조건 걸기 WHERE
-
-참고내용
-그룹화 하기전 조건 걸기 WHERE
+```
+SELECT name, COUNT(name) 
+FROM animal_ins 
+Where name is not NULL 
+Group by name 
+Having count(name) >1 
+order by name;
+```
+(MYSQL)
+```
+-입양 시각 구하기
+SELECT HOUR(datetime) AS HOUR, COUNT(HOUR(datetime)) AS COUNT
+FROM animal_outs
+GROUP BY HOUR(datetime)
+HAVING HOUR >= 9 AND HOUR <= 19
+ORDER BY HOUR
+```
+참고
 https://extbrain.tistory.com/56
+
+## 8. 변수 사용
+```
+SET @hour := -1;
+
+SELECT (@hour := @hour + 1) as HOUR,
+(SELECT COUNT(*) FROM ANIMAL_OUTS WHERE HOUR(DATETIME) = @hour) as COUNT
+FROM ANIMAL_OUTS
+WHERE @hour < 23;
+```
 
 
