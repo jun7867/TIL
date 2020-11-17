@@ -116,3 +116,32 @@ O(N)
 참고자료
 
 [www.youtube.com/watch?v=5Lu34WIx2Us&ab\_channel=%EB%8F%99%EB%B9%88%EB%82%98](https://www.youtube.com/watch?v=5Lu34WIx2Us&ab_channel=%EB%8F%99%EB%B9%88%EB%82%98)
+
+
+## DP 대표 예제
+
+### 1. 1로 만들기
+
+https://namhandong.tistory.com/129
+
+경우가 1 빼기, 3나누기, 2나누기가 있으면 3개의 경우를 모두 구하고 min값을 찾아주낟.
+
+```
+d[i] = d[i-1] +1
+if i%3 ==0:
+	d[i]=min(d[i],d[i//3]+1)
+if i%2 ==0:
+	d[i]=min(d[i],d[i//2]+1)
+```
+
+### 2. 계단 오르기
+
+https://namhandong.tistory.com/130?category=791114
+
+처음부터 올라가는걸 계산해주기 보다 직전칸, 2계단 전에서 올라온 경우를 나눠서 생각해 준다.
+
+점화식 : d[i] = max( score[i] + score[i-1] + d[i-3] , score[i] + d[i-2])
+
+
+
+### 즉 , 점화식을 잘 세우고 max와 min 을 이용하면 쉽게 풀 수 있다.
