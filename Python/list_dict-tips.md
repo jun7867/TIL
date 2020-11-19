@@ -40,3 +40,13 @@ int로 바꾸는건 반대로
 ```
 temp = list(map(str, numbers))
 ```
+## 7. dict 솔트하기
+```
+# 키값으로 sort
+dict = sorted(dict.items())
+
+# value값으로 sort
+# itemgetter(1)은 1번째 인덱스로 sort 한다는 뜻. 
+dict= sorted(dict.items(), key=operator.itemgetter(1))
+
+```
