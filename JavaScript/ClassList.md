@@ -10,9 +10,10 @@ classList.remove 는 클래스에서 제거하는 것.
 
 classList.contains 는 값이 존재하는지 체크하는 것.
 
+밑에 예시는 class에 active라는 요소가 없으면 확인하고 remove, 있으면 add해서 active로 다양한 효과를 줄 수 있다.
 ```jsx
 function handleClick() {
-  const hasClass = title.classList.contains(CLICKED_CLASS);
+  const hasClass = title.classList.contains('active');
 
   if (!hasClass) {
     title.classList.add('active');
