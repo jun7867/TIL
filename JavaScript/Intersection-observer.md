@@ -1,4 +1,3 @@
-[Intersection Observer API MDN](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 
 # Intersection Observer
 
@@ -68,4 +67,8 @@ isIntersecting일때는 설정한 만큼 실행되고 반대로 나갈때는 반
 ## 활용 예시
 
 스크롤을 내리면서 화면에 해당하는 요소가 들어오면 효과주기. (색 변화 or JS callback함수 실행)
+
+
+### 더 알고 싶다면 아래 사이트 참고
+[Intersection Observer API MDN](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 
