@@ -43,3 +43,23 @@ import sys
 anw=sys.maxsize
 ```
 anw에 maxsize를 저장한다는 뜻. 보통 백준 문제를 풀때 초기값을 설정해줘서 min을 찾아야 하는 문제의 경우 anw=1000000 이런식으로 하는것보다 코드가 훨씬 깔끔하게 사용할 수 있다.
+
+## 3. bisect
+bisect는 이진탐색을 해주는 모듈이다. bisect_left, bisect_right, insort, insort_left 이렇게 4개
+
+속도가 이진 탐색이기에 빠르다.
+
+bisect_left(arr,x,lo=0,hi=len(arr)) 은 정렬된 리스트 arr에서 x값이 들어갈 위치 인덱스. (Lo~hi까지이며 경계값은 왼쪽까지 포함이다. 오른쪽 <=까지 포함하려면 right 사용)
+
+```
+arr=[100,200,300]
+print(bisect.bisect_left(arr,150))
+print(bisect.bisect_left(arr,200))
+# 결과 
+#1
+#1
+```
+
+
+
+
