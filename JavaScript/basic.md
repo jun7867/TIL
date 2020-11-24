@@ -162,18 +162,6 @@ text= '8' / '2'; //number
         t = false || false // false
         ```
 
-    - 연산 순서
-
-        NOT → AND → OR
-
-        ```jsx
-        const value = !((true && false) || (true && false) || !false);
-
-        // NOT -> AND -> OR 순서로 처리
-        // 1. const value = !((true && false) || (true && false) || true);
-        // 2. const value = !(false || false || true);
-        // 3. const value = !true;
-        ```
 
 - Equality
     - 일치 여부 비교
