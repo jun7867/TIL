@@ -40,7 +40,13 @@ int로 바꾸는건 반대로
 ```
 temp = list(map(str, numbers))
 ```
-## 7. dict 솔트하기
+
+## 7. String 한 문자씩 list에 저장
+```
+s = list(input().strip())
+# asdf => ['a','s','d','f']
+```
+## 8. dict 솔트하기
 ```
 # 키값으로 sort
 dict = sorted(dict.items())
@@ -50,7 +56,7 @@ dict = sorted(dict.items())
 dict= sorted(dict.items(), key=operator.itemgetter(1))
 
 ```
-## 8. dict key,value 분리
+## 9. dict key,value 분리
 ```
 x = {'a': 10, 'b': 20, 'c': 30, 'd': 40}
 for key, value in x.items():
