@@ -72,4 +72,5 @@ heapq.heappop(heap) // heap에 4 pop
 ```
 관련 문제 : https://programmers.co.kr/learn/courses/30/lessons/42626
 
+관련 블로그 : https://www.daleseo.com/python-heapq/
 
