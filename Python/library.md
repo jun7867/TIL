@@ -60,7 +60,7 @@ print(bisect.bisect_left(arr,200))
 #1
 ```
 
-### heap
+## 4. heap
 heap은 push와 pop을 하면서 자동으로 정렬해주는 유용한 라이브러리이다.
 ```
 import heapq
