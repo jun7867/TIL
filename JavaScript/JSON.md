@@ -1,3 +1,6 @@
+# JSON (JavaScript)
+
+## HTTP , AJAX, XML, JSON ??
 HTTP : 브라우저 위에서 동작하는 Client가 Server와 통신하는 방법
 
 AJAX : 웹 페이지에서 서버에서 동적으로 주고 받는 기술 (XHR)
