@@ -259,3 +259,4 @@ function pickOnlyOne() {
 }
 pickOnlyOne().then(console.log);
 ```
+
