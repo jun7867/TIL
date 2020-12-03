@@ -22,7 +22,7 @@
 
 2. **object**, box container : single item을 여러개 묶어서 사용
 
--reference를 통해서 object가 담겨있는 메모리에 접근 (const를 사용하면 reference만 잠긴다. 그래서 mutable함)
+-reference를 통해서 object가 담겨있는 메모리에 접근 (const를 사용하면 reference만 잠긴다. 그래서 reference가 가르키고 있는 object 내용들은 mutable함)
 
 3. **function** (= first-class function : 함수를 변수에 할당하고 파라미터 전달, 리턴타입으로 사용 가능)
 
