@@ -1,4 +1,4 @@
-## 1. list에 있는 int들 붙여서 출력
+## 1. list에 있는 int들을 붙여서 출력
 ```
 test=[1,3,4,4]
 print(*test, sep="")
