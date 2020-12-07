@@ -61,7 +61,6 @@ exact가 false인 경우에 /home/profile도 yes가고 간주한다.
  </Route>
 ```
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ce0ba273-d0e6-4078-8ece-ebdaac08df5c/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ce0ba273-d0e6-4078-8ece-ebdaac08df5c/Untitled.png)
 
 ### props.history를 props 안하고도 쓰는 방법 (Hook)
 
