@@ -8,6 +8,8 @@
 
 www.card/home  , www.card/contact, www.card/login 같은 특정한 페이지가 따로 있어서 연결
 
+
+</br>
 SPA는 하나의 url로 한번 페이지가 로딩되고, 페이지를 바꾸려고 할 때 새로운 페이지가 생기는게 아니라 부분적으로만 바뀜. 
 
 ⇒ 각각의 영상마다의 위치를 알 수 없고 뒤로가기 같은 것을 할 수 없음.
@@ -16,11 +18,13 @@ SPA는 하나의 url로 한번 페이지가 로딩되고, 페이지를 바꾸려
 
 [React Router: Declarative Routing for React](https://reactrouter.com/)
 
+### router 설치
 ```jsx
 // React router dom 설치
 yarn add react-router-dom
 ```
 
+### router 
 ```jsx
 // app.js
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -45,6 +49,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 -locolhost:3000/ 또는 locolhost:3000/home 주소를 입력하면 Home Component로 이동한다.
 
+### exact
 ```jsx
 //exact: bool
 exact를 추가하면(true) /home으로 갔다가 /profile 갔을때 이동이 된다. 
