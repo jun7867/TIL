@@ -74,3 +74,12 @@ heapq.heappop(heap) // heap에 4 pop
 
 관련 블로그 : https://www.daleseo.com/python-heapq/
 
+## 5. Counter
+Counter는 list에서 각 요소들이 몇개가 있는지 센 후에 dict 형태로 저장해준다.
+
+ex) 백준 10816 숫자 카드 2 (Counter or 이분탐색 or hash)
+```
+from collections import Counter
+C = Counter(Nlist) 
+# 출력 예시 : Counter({10: 3, 3: 2, -10: 2, 6: 1, 2: 1, 7: 1})
+```
