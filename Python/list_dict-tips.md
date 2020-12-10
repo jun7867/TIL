@@ -62,3 +62,15 @@ x = {'a': 10, 'b': 20, 'c': 30, 'd': 40}
 for key, value in x.items():
   print(key, value)
 ```
+
+## 10. 중복 제거를 위해 set을 하고 다시 list로 변환
+```
+word_list=list(set(word))
+```
+
+## 11. list 정렬 중복 조건
+백준 1181번 문제
+```
+# index0기준 정렬 + index1 기준으로정렬
+words_list.sort(key = lambda word: (word[1], word[0])) 
+```
