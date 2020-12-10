@@ -71,6 +71,10 @@ word_list=list(set(word))
 ## 11. list 정렬 중복 조건
 백준 1181번 문제
 ```
-# index0기준 정렬 + index1 기준으로정렬
+# index0기준 정렬 -> index1 기준으로정렬
+words_list.sort(key = lambda word: (word[0], word[1])) 
+
+# index1기준 정렬 -> index0 기준으로정렬
 words_list.sort(key = lambda word: (word[1], word[0])) 
+
 ```
