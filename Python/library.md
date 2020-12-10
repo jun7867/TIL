@@ -83,3 +83,21 @@ from collections import Counter
 C = Counter(Nlist) 
 # 출력 예시 : Counter({10: 3, 3: 2, -10: 2, 6: 1, 2: 1, 7: 1})
 ```
+
+## 6. hashmap
+해쉬 자료구조의 구현 방식은 Dictionary를 많이 사용
+
+hash맵에서 해당 주소에 값이 없으면 값을 추가합니다.
+
+hash맵에서 해당 주소에 값이 있으면 그 값에 추가해줍니다.
+
+ex) 백준 10816 숫자 카드 2 (Counter or 이분탐색 or hash)
+```
+hashmap = {}
+for n in Nlist:
+    if n in hashmap:
+        hashmap[n] += 1
+    else:
+        hashmap[n] = 1
+# 출력 예시 : {6: 1, 3: 2, 2: 1, 10: 3, -10: 2, 7: 1}
+```
