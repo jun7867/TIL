@@ -20,7 +20,7 @@ int X = Integer.parseInt(st.nextToken()); // 두번째
 st = new StringTokenizer(br.readLine(), " "); // 그 다음줄 입력 받기
 ```
 
-## 3. String -> int
+## 3. int -> String
 방법 1) valueOf
 ```
 String multi = String.valueOf(1 * 2 * 3);
@@ -29,7 +29,9 @@ String multi = String.valueOf(1 * 2 * 3);
 ```
 String multi = Integer.toString(1 * 2 * 3);
 ```
-방법 3) Integer.parseInt
+
+## 3-1. String -> int
+방법 1) Integer.parseInt
 입력받은 것을 int로 변환
 ```
 int testcase = Integer.parseInt(br.readLine());
