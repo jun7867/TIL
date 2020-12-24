@@ -29,6 +29,11 @@ String multi = String.valueOf(1 * 2 * 3);
 ```
 String multi = Integer.toString(1 * 2 * 3);
 ```
+방법 3) Integer.parseInt
+입력받은 것을 int로 변환
+```
+int testcase = Integer.parseInt(br.readLine());
+```
 
 ## 4. charAt 문자열에서 index값 꺼내오기 , 숫자로 만들기
 ```
