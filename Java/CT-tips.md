@@ -19,3 +19,22 @@ int X = Integer.parseInt(st.nextToken()); // 두번째
 
 st = new StringTokenizer(br.readLine(), " "); // 그 다음줄 입력 받기
 ```
+
+## 3. String -> int
+방법 1) valueOf
+```
+String multi = String.valueOf(1 * 2 * 3);
+```
+방법 2) Integer.toString
+```
+String multi = Integer.toString(1 * 2 * 3);
+```
+
+## 4. charAt 문자열에서 index값 꺼내오기 , 숫자로 만들기
+```
+multi.charAt(0) // 0에 해당하는 값 꺼내올 수 있다.
+multi.charAt(j) - '0'을 빼주면 숫자가 됨.
+```
+
+
+
