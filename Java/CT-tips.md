@@ -43,5 +43,21 @@ multi.charAt(0) // 0에 해당하는 값 꺼내올 수 있다.
 multi.charAt(j) - '0'을 빼주면 숫자가 됨.
 ```
 
+## 5. 아스키코드 (char -> int)
+```
+Scanner in = new Scanner(System.in);
+int ch = in.next().charAt(0);
+System.out.print(ch);
+```
+
+## 5-1 아스키 코드 (int -> char)
+```
+Scanner in = new Scanner(System.in);
+int num = in.nextInt();
+char ch = (char) num;
+System.out.println(ch);
+```
+
+
 
 
