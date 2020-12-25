@@ -221,3 +221,26 @@ text= '8' / '2'; //number
 ```jsx
 a > 3 ? n=3 : n=0 // True면 ? 뒤에 , False면 : 뒤에
 ```
+
+### 클린코드 예시 1
+
+```jsx
+const BIRTHDAY='95.12.13';
+const age=calculate(BIRTHDAY);
+```
+
+여기서 BIRTHDAY는 하드 코딩한 값으로 실행 전에 이미 값을 알고 있기에 대문자로 사용한다.
+
+하지만 age는 런타임에 따라 재평가 되기 때문에 소문자로 사용한다.
+
+### 클린코드 예시 2
+
+현재 살고있는 행성, 현재 사용자를 변수로 표현할 때 
+
+```jsx
+let planet; // X
+let ourPlanetName; // O
+
+let user; // X
+let currentUserName; // O
+```
