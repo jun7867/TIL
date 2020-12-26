@@ -9,10 +9,15 @@ sb.append('b');
 // ab
 ```
 
-## 1-1. StringBuilder reverse
+### 1-1. StringBuilder reverse
 입력받은 문자열을 거꾸로 한뒤에 숫자로 변환하는 예시. (Integer.parseInt는 String-> Int로 변환)
 ```
 int A = Integer.parseInt(new StringBuilder(st.nextToken()).reverse().toString());
+```
+
+### 1-2. StringBuilder 초기화
+```
+sb.delete(0,sb.length()); // 여기서 sb는 StringBuilder임.
 ```
 
 
