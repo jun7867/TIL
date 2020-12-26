@@ -27,6 +27,10 @@ System.out.println(st.countTokens());
 ```
 StringTokenizer의 countTokens를 활용하면 토큰의 개수를 알 수 있음.
 
+```
+int A = Integer.parseInt(new StringBuilder(st.nextToken()).reverse().toString());
+```
+입력받은 문자열을 거꾸로 한뒤에 숫자로 변환하는 예시. (Integer.parseInt는 String-> Int로 변환)
 
 ## 3. int -> String
 방법 1) valueOf
