@@ -74,5 +74,14 @@ System.out.println(ch);
 ```
 
 
-
-
+## 6. 문자열 다루기
+### 6-1 contains
+```
+s="abc";
+s.contains("a"); // True / False로 문자 포함 여부 파악.
+```
+### 6-2 replace
+```
+s="abc";
+s = s.replaceAll("a", "*"); // 모든 a를 *으로 변경
+```
