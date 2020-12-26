@@ -20,6 +20,14 @@ int X = Integer.parseInt(st.nextToken()); // 두번째
 st = new StringTokenizer(br.readLine(), " "); // 그 다음줄 입력 받기
 ```
 
+## 2-1. StringTokenizer 활용
+```
+StringTokenizer st = new StringTokenizer(br.readLine(), " ");
+System.out.println(st.countTokens());
+```
+StringTokenizer의 countTokens를 활용하면 토큰의 개수를 알 수 있음.
+
+
 ## 3. int -> String
 방법 1) valueOf
 ```
