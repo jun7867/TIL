@@ -9,6 +9,13 @@ sb.append('b');
 // ab
 ```
 
+## 1-1. StringBuilder reverse
+입력받은 문자열을 거꾸로 한뒤에 숫자로 변환하는 예시. (Integer.parseInt는 String-> Int로 변환)
+```
+int A = Integer.parseInt(new StringBuilder(st.nextToken()).reverse().toString());
+```
+
+
 ## 2. BufferedReader , StringTokenizer 
 빨리 입력 받기, StringTokenizer는 한줄에 입력받는 것들을 저장하고 nextToken()으로 하나씩 꺼낼 수 있다.
 ```
@@ -27,10 +34,6 @@ System.out.println(st.countTokens());
 ```
 StringTokenizer의 countTokens를 활용하면 토큰의 개수를 알 수 있음.
 
-```
-int A = Integer.parseInt(new StringBuilder(st.nextToken()).reverse().toString());
-```
-입력받은 문자열을 거꾸로 한뒤에 숫자로 변환하는 예시. (Integer.parseInt는 String-> Int로 변환)
 
 ## 3. int -> String
 방법 1) valueOf
