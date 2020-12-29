@@ -56,6 +56,11 @@ String multi = Integer.toString(1 * 2 * 3);
 ```
 int testcase = Integer.parseInt(br.readLine());
 ```
+방법 2) Integer.valueOf()
+입력받은 것을 int로 변환
+```
+int testcase = Integer.valueOf(br.readLine());
+```
 
 ## 4. charAt 문자열에서 index값 꺼내오기 , 숫자로 만들기
 ```
