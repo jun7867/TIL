@@ -56,4 +56,8 @@ System.out.println(list.contains(1)); //list에 1이 있는지 검색 : true
 System.out.println(list.indexOf(1)); //1이 있는 index반환 없으면 -1
 ```
 
+## Collections와 연계
+
+Collections와 함께 사용해서 최소값, 최대값을 구할 수 있다.
+
 
