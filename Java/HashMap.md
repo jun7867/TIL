@@ -102,3 +102,12 @@ System.out.println("containsValue(0): " + fruits.containsValue(0));
 
 ## replace()
 replace()는 인자로 전달된 key의 value를 인자로 전달된 value로 교체해 줍니다. 교체되어 삭제되는 value는 리턴됩니다. 존재하지 않는 key가 인자로 전달되면 null이 리턴됩니다.
+
+## getOrDefault
+존재하지 않으면 뒤에 있는 것을 기본값으로 설정. 
+```java
+HashMap<String, Integer> hm = new HashMap<>();
+for (String player : participant)
+      hm.put(player, hm.getOrDefault(player, 0) + 1); // hm에 player 같은게 없다면 0, 있다면 get
+```
+
