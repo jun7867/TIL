@@ -95,3 +95,10 @@ s.contains("a"); // True / False로 문자 포함 여부 파악.
 s="abc";
 s = s.replaceAll("a", "*"); // 모든 a를 *으로 변경
 ```
+
+
+## 7. array range 자르기
+copyOfRange
+```
+int[] temp = Arrays.copyOfRange(array, start_Idx, end_Idx);
+```
