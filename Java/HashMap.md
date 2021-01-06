@@ -111,3 +111,39 @@ for (String player : participant)
       hm.put(player, hm.getOrDefault(player, 0) + 1); // hm에 player 같은게 없다면 0, 있다면 get
 ```
 
+
+
+# 정렬
+
+# Key로 정렬
+```
+Map<Integer, String> testMap = new HashMap<Integer, String>();
+// Map에 데이터 추가
+testMap.put( 1, "apple");
+testMap.put( 4, "pineapple");
+// 키로 정렬
+Object[] mapkey = testMap.keySet().toArray();
+Arrays.sort(mapkey);
+
+for (Integer nKey : testMap.keySet())
+{
+    System.out.println(testMap.get(nKey));
+}
+```
+https://ponyozzang.tistory.com/404
+
+# Value 정렬
+https://daily-life-of-bsh.tistory.com/99
+```
+List<Integer> keySetList = new ArrayList<>(map.keySet());
+		
+// 오름차순
+Collections.sort(keySetList, (o1, o2) -> (map.get(o1).compareTo(map.get(o2))));
+
+//내림차순
+Collections.sort(keySetList, (o1, o2) -> (map.get(o2).compareTo(map.get(o1))));
+
+for(Integer key : keySetList) {
+    System.out.println("key : " + key + " / " + "value : " + map.get(key));
+}
+```
