@@ -28,3 +28,20 @@ stack.contains(1) // stack에 1이 있는지 check (있다면 true)
 ```
 
 
+# Queue
+## 선언
+```java
+import java.util.Queue; //import
+Queue<Integer> q = new LinkedList<>(); //int형 스택 선언
+```
+
+## 사용
+```
+q.poll() // 제일 앞에 있는 값 꺼내기
+q.peek() // 제일 앞에 있는 값 보여주기
+```
+
+## max값 구하기
+```
+Collections.max(queue);
+```
