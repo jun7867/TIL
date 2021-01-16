@@ -102,3 +102,11 @@ copyOfRange
 ```
 int[] temp = Arrays.copyOfRange(array, start_Idx, end_Idx);
 ```
+
+
+## 8. replace
+### 8-1. replace
+replace는 같은 값이 있으면 다 바꿔준다.
+
+### 8-2. replaceFirst
+먼저 나오는 값 하나만 바꿔준다.
