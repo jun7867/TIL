@@ -50,6 +50,7 @@ while(iter.hasNext()){//다음값이 있는지 체크
 ```
 
 ## contain, indexOf
+배열이였으면 asList로 변경해서 사용하면 됨.
 ```java
 ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(1,2,3));
 System.out.println(list.contains(1)); //list에 1이 있는지 검색 : true
