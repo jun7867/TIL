@@ -1,4 +1,4 @@
-https://velog.io/write?id=7afa8faa-661a-4316-9531-4d4eef96c737
+https://velog.io/@jun7867/JavaScript-%EB%A9%B4%EC%A0%91-%EC%A4%80%EB%B9%84
 
 ## 이벤트 버블링(Event Bubbling), 이벤트 캡쳐링(Event Capturing)에 대해서 설명하세요.
 
