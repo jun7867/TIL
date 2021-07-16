@@ -64,10 +64,17 @@ SPA : 단일 페이지 애플리케이션
 
 ### SEO
 - 검색 엔진 최적화로 웹 페이지를 검색 결과 상위에 나올수 있게 하는 작업.
-- SPA경우 SEO가 좋지 않다. 
+- SPA경우 SEO가 좋지 않다. 그래서 Next.js나 gatsby를 사용하는 방법이 있음. 
 
+NextJS나 Nuxt JS는 SSR이고, Gatsby는 SSG(Static Site Generator)이다.  
+
+NextJS에서는 pages 디렉토리 안에 있는 것들이 서버에서 미리 렌더링 된 후 브라우저에 전달된다. 따라서 초기 로딩속도는 늦은편이나 CSR의 단점인 SEO문제를 해결할 수있다. 첫 로딩페이지 이후는 그래도 CSR의 장점을 가져가기 가능. (CSR은 번들링 된 JS가 렌더링을 담당하여 초기에는 빈 HTML만 보내줌, Next는 pre-rendering으로 빌드 타임때 HTML 문서 미리 생성)
+
+SSG는 HTML을 **빌드 타임에 각 페이지별로 생성**하고 해당 페이지로 요청이 올 경우 이미 생성한 HTML 문서를 반환. 
+=> 동적인 데이터 교환을 기반 (SSR 추천), 개인 포트폴리오 같은 정적인 데이터 기반(SSG 추천)
+
+- 또는 React에 htlmet을 사용. 
 https://asfirstalways.tistory.com/244
-
 ## 브라우저의 동작 원리
 1) HTML 마크업 처리, DOM 트리 빌드 ("What")
 2) CSS 마크업 처리, CSSOM 트리 빌드 ("HOW")
