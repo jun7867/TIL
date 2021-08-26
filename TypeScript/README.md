@@ -215,10 +215,3 @@ function Counter() {
 export default Counter;
 ```
 
-## Q?
-
-- type, interface 어떤걸로 통일(?)하는지
-- React.FC 사용하는지 (defaultProps 문제가 있다고 들었습니다.)
-- function을 쓰는지, 화살표 함수를 쓰는지.
-
-제가 어제 집가서 기존에 있던 코드를 잠시 살펴봤는데 FC랑 interface가 사용된걸로 보이는데 맞나요??
