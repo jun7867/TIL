@@ -215,3 +215,15 @@ function Counter() {
 export default Counter;
 ```
 
+---
+
+### 2021.09.03
+
+- {match} 키워드를 받을때는 extends 시켜줘라..
+
+```tsx
+interface ISearchProps extends RouteComponentProps<{keyword: string}>{
+    // IMDB: Imdb;
+    searchVideo?: SearchStore;
+}
+```
