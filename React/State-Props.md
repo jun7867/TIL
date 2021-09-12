@@ -107,3 +107,26 @@ render(){
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 <br>
+
+---
+
+### 속성값과 상탯값
+
+리엑트가 값의 변경을 알기 위해서는 상태값을 변경해야 한다.
+
+```jsx
+// 상태값
+useState()
+
+// 속성값
+props
+```
+
+- 부모 컴포넌트가 렌더링 될 때마다 자식 컴포넌트도 새로 렌더링이 된다. 이때 새로 생성된 속성값을 받기에 업데이트가 된다.
+- 상태값도 속성값과 마찬가지로 불변 변수로 관리하는것이 좋다. (props에서 값을 변경하는 것은 불가능하다. readonly) => 코드의 복잡도가 낮아진다. 
+객체를 불변 변수로 관리하기 위해 전개 연산자(...)를 이용한다. 
+⇒ 새로운 객체를 만들어서 관리. (기존의 객체를 변경하지 않는다.)
+
+### Memo
+
+- 속성값이 변경될 때만 렌더링을 하고 싶다면 react.memo 사용.
