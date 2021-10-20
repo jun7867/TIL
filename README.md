@@ -17,3 +17,7 @@ Today I Learned (시작일 2020. 10. 16)
 
 - 1일 1커밋에 집착하지 않는다.
 
+---
+
+읽어보기
+https://merrily-code.tistory.com/124
