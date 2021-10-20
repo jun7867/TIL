@@ -20,4 +20,4 @@ Today I Learned (시작일 2020. 10. 16)
 ---
 
 읽어보기
-https://merrily-code.tistory.com/124
+[Git fetch와 pull, pull은 이제 그만!](https://merrily-code.tistory.com/124)
