@@ -1,3 +1,60 @@
+# 정재남 코어 자바스크립트 요약
+
+생성자 함수가 new 연산자로 인스턴스(Instance)를 만들면, constructor의 ‘prototype’이라는 프로퍼티의 내용이 [[Prototype]] 라고 하는 프로퍼티로 참조를 전달한다. 
+⇒ **constructor.prototype이랑 instance[[Proototype]]가 같은 객체를 바라본다. 그런데** [[Proototype]]는 접근 가능한 것이 아니라 정보를 보여주기만 하고 실제 동작에서는 instance와 동일시된다. 
+
+### 프로토타입 예시
+
+Array의 prototype은 new 연산자로 생성한 instance 배열의 [[Prototype]]와 연결이 되어있다.
+
+prototype이라는 프로퍼티는 객체인데 concat(), filter(), map() ...이라는 것들이 담겨있다. 같은 내용이 [[Prototype]]에도 있다. 
+
+### 문자열, 숫자 리터럴(기본형 타입) 프로토타입 예시
+
+문자열, 숫자 리터럴은 객체가 아니기 때문에 [[Prototype]]가 존재하지 않는다. 하지만, 메서드를 쓰려고 하면 자바스크립트가 임시로 Number, String 생성자 함수의 인스턴스를 만들어서 메서드를 적용한 후에 다시 인스턴스를 제거하는 식으로 동작한다.
+
+null과 undefined를 제외하고 모든 데이터타입은 생성자 함수가 존재하고 이 생성자 함수의 프로토타입을 통해 전용 메서드들을 사용할 수 있다. 
+
+### 인스턴스에 접근하는 방법
+
+10.[[Prototype]].toFixed() 처럼 접근이 불가능하다. 
+
+접근 방법
+
+```jsx
+instance.__proto__ // 비공식 
+Object.getPrototypeOf(instance) // 공식 (추천 방법)
+```
+
+
+모두 같은 Person.prototype을 가르킨다. 
+
+---
+
+### 활용 예시
+
+인스턴스들이 모두 똑같이 가지는 정보들을 prototype으로 참조한다. 
+⇒ 효율성이 좋아진다. (반복 제거)
+
+---
+
+### 프로토타입 체이닝
+
+모든 데이터타입은 Object.prototype과 프로토타입 체인으로 연결이 되어있다. 
+
+즉, Object의 prototype에 있는 toString(), valueOf().. 같은 것들을 사용 가능하다. 
+
+
+그렇기 때문에 **Object의 prototype에는 공통된 것들만 넣어주어야 하기 때문에** Object라는 것에 따로 만들어줘서 Object 객체 자체를 사용하는 경우가 있다. (Object.keys())
+
+
+---
+
+**즉, 프토토타입 체인을 통해서 instance에서 생성자 함수의 prototype에 있는 메서드와 Object의 prototype에 정의된 메서드를 사용할 수 있다.**
+
+
+---
+
 자바스크립트를 이루는 거의 모든 것이 객체다. 원시 타입의 값을 제외한 나머지 값들(함수, 배열, 정규 표현식)은 모두 객체다. 
 
 ## 객체지향 프로그래밍
